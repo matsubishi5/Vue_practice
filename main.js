@@ -3,6 +3,8 @@ new Vue({
 
   data: {
     isActive: true,
+    color: "red",
+    bg: "bg-blue",
   },
 
   methods: {},
