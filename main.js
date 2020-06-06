@@ -6,6 +6,9 @@ new Vue({
       color: 'red',
       'background-color': 'blue',
     },
+    baseObject: {
+      'font-size': '60px',
+    },
   },
 
   methods: {},
