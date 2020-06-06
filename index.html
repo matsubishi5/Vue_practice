@@ -8,8 +8,9 @@
   </head>
   <body>
     <div id="app">
-      <p v-show="ok">Hello</p>
-      <button @click="ok = !ok">表示切り替え</button>
+      <ul v-for="fruit in fruits">
+        <li>{{ fruit }}</li>
+      </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

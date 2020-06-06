@@ -2,7 +2,7 @@ new Vue({
   el: '#app',
 
   data: {
-    ok: true,
+    fruits: ['りんご', 'バナナ', 'イチゴ'],
   },
 
   methods: {},
