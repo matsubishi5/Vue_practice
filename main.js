@@ -1,11 +1,18 @@
-Vue.component("paragraph", {
-  template: "<p><slot></slot></p>",
-});
-
 new Vue({
   el: "#app",
 
-  data: {},
+  data: {
+    isActive: true,
+  },
 
-  mehods: {},
+  methods: {},
+
+  computed: {
+    classObject: function() {
+      return {
+        red: this.isActive,
+        "bg-blue": !this.isActive,
+      };
+    },
+  },
 });
