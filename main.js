@@ -3,6 +3,7 @@ new Vue({
 
   data: {
     ok: false,
+    maybeOk: true,
   },
 
   methods: {},
