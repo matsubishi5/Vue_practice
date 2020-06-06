@@ -1,9 +1,11 @@
 new Vue({
-  el: "#app",
+  el: '#app',
 
   data: {
-    textColor: "red",
-    bgColor: "blue",
+    styleObject: {
+      color: 'red',
+      'background-color': 'blue',
+    },
   },
 
   methods: {},
