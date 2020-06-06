@@ -8,11 +8,7 @@
   </head>
   <body>
     <div id="app">
-      <template v-if="ok">
-        <p>おはよう</p>
-        <p>こんにちは</p>
-        <p>おやすみ</p>
-      </template>
+      <p v-show="ok">Hello</p>
       <button @click="ok = !ok">表示切り替え</button>
     </div>
 
