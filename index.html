@@ -8,8 +8,8 @@
   </head>
   <body>
     <div id="app">
-      <ul v-for="fruit in fruits">
-        <li>{{ fruit }}</li>
+      <ul v-for="(fruit, index) in fruits">
+        <li>{{ index }}{{ fruit }}</li>
       </ul>
     </div>
 
