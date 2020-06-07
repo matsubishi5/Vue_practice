@@ -8,13 +8,13 @@
   </head>
   <body>
     <div id="app">
-      <template v-for="fruit in fruits">
+      <template v-for="fruit of fruits">
         <ul>
           <li>{{ fruit }}</li>
           <hr />
         </ul>
       </template>
-      <ul v-for="n in 10">
+      <ul v-for="n of 10">
         <li>{{ n }}</li>
       </ul>
     </div>
