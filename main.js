@@ -3,13 +3,16 @@ let data = {
 };
 
 let vm = new Vue({
-  el: '#app1',
+  // el: '#app',
 
   data: data,
 
   methods: {},
 
-  computed: {},
+  computed: {
+    myData: function() {
+      return this.$data;
+    },
+  },
 });
-
-console.log(data === vm.$data);
+vm.$mount('#app');
