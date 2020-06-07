@@ -8,13 +8,12 @@
   </head>
   <body>
     <div id="app">
-      <ul v-for="(fruit, index) in fruits">
-        <li>{{ index }}{{ fruit }}</li>
-      </ul>
-
-      <ul v-for="(value, key) in Object">
-        <li>{{ key }}:{{ value }}</li>
-      </ul>
+      <template v-for="fruit in fruits">
+        <ul>
+          <li>{{ fruit }}</li>
+          <hr />
+        </ul>
+      </template>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
