@@ -1,19 +1,23 @@
 new Vue({
-  el: '#app',
+  el: '#app1',
 
   data: {
-    fruits: [
-      { name: 'りんご', id: 1 },
-      { name: 'りんご', id: 2 },
-      { name: 'りんご', id: 3 },
-    ],
+    message: 'インスタンス1',
   },
 
-  methods: {
-    remove: function() {
-      this.fruits.shift();
-    },
+  methods: {},
+
+  computed: {},
+});
+
+new Vue({
+  el: '#app2',
+
+  data: {
+    message: 'インスタンス2',
   },
+
+  methods: {},
 
   computed: {},
 });
