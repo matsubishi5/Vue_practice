@@ -8,15 +8,14 @@
   </head>
   <body>
     <div id="app">
-      <template v-for="fruit of fruits">
+      <div v-for="fruit in fruits" :key="fruit">
         <ul>
-          <li>{{ fruit }}</li>
-          <hr />
+          <li>{{ fruit.id }}:{{ fruit.name }}</li>
+          <input type="text" />
         </ul>
-      </template>
-      <ul v-for="n of 10">
-        <li>{{ n }}</li>
-      </ul>
+      </div>
+
+      <button @click="remove">先頭を削除</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

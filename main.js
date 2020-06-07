@@ -2,10 +2,18 @@ new Vue({
   el: '#app',
 
   data: {
-    fruits: ['りんご', 'バナナ', 'イチゴ'],
+    fruits: [
+      { name: 'りんご', id: 1 },
+      { name: 'りんご', id: 2 },
+      { name: 'りんご', id: 3 },
+    ],
   },
 
-  methods: {},
+  methods: {
+    remove: function() {
+      this.fruits.shift();
+    },
+  },
 
   computed: {},
 });
