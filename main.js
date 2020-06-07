@@ -1,13 +1,14 @@
 let vm = new Vue({
-  el: '#app',
-
   data: {
     message: 'Hello',
+    name: 'takumi',
   },
 
   methods: {},
 
   computed: {},
 
-  template: '<p>{{ message }}</p>',
-});
+  render: function(createElement) {
+    return createElement('h1', 'Hello' + this.name);
+  },
+}).$mount('#app');
