@@ -1,18 +1,13 @@
-let data = {
-  message: 'Hello',
-};
-
 let vm = new Vue({
-  // el: '#app',
+  el: '#app',
 
-  data: data,
+  data: {
+    message: 'Hello',
+  },
 
   methods: {},
 
-  computed: {
-    myData: function() {
-      return this.$data;
-    },
-  },
+  computed: {},
+
+  template: '<p>{{ message }}</p>',
 });
-vm.$mount('#app');
