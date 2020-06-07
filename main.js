@@ -1,27 +1,11 @@
-let vm1 = new Vue({
+let vm = new Vue({
   el: '#app1',
 
   data: {
-    message: 'インスタンス1',
+    message: 'Hello',
   },
 
   methods: {},
-
-  computed: {},
-});
-
-let vm2 = new Vue({
-  el: '#app2',
-
-  data: {
-    message: 'インスタンス2',
-  },
-
-  methods: {
-    changeMessage1: function() {
-      vm1.message = '書き換えました';
-    },
-  },
 
   computed: {},
 });
