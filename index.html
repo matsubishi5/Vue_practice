@@ -12,8 +12,8 @@
         <li>{{ index }}{{ fruit }}</li>
       </ul>
 
-      <ul v-for="value in Object">
-        <li>{{ value }}</li>
+      <ul v-for="(value, key) in Object">
+        <li>{{ key }}:{{ value }}</li>
       </ul>
     </div>
 
